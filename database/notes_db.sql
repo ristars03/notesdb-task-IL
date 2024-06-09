@@ -17,5 +17,3 @@ INSERT INTO notes ('id', 'title', 'datetime', 'note') VALUES
 ('3', 'Belajar UI UX','2024-06-05 10:30:00','Figma dan Maze');
 
 DROP TABLE notes
-
-
