@@ -1,7 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const { db, testConnection} = require('./config/database.js'); 
+const {testConnection} = require('./config/database.js'); 
 
 dotenv.config()
 
@@ -18,3 +18,4 @@ app.listen(process.env.APP_PORT,() => {
     testConnection()
     console.log(`Server is running in http://localhost:${process.env.APP_PORT}`)
 })
+

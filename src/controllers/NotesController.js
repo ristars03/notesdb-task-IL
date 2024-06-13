@@ -5,13 +5,13 @@ const getAllNusantaraValor = async (req, res) => {
   try {
     const [data] = await NotesModel.getAllNusantaraValor();
     res.status(200).json({
-      message: "Berhasil Mengambil Seluruh Data Catatan",
+      message: "Berhasil Mengambil Seluruh Data Notes",
       data: data,
     });
   } catch (error) {
     console.log(error)
     res.status(500).json({
-      message: "Gagal Mengambil Seluruh Data Catatan",
+      message: "Gagal Mengambil Seluruh Data Notes",
       data: [],
     });
   }
